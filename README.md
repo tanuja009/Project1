@@ -1,2 +1,2 @@
-# Project1
-Color Changer Project in JS
+# Projects
+Multiple JS Practice Project With Source Code
