@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai Our Code</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+let printnamedate;
+    const startprinting=function(){
+        printnamedate=setInterval(print,1000)
+        
+        function print(){
+        console.log("tanuja",Date.now());
+        }
+    }
+document.querySelector('#start').addEventListener('click',startprinting)
+
+
+const stopprinting=function(){
+  clearInterval(printnamedate)
+}
+document.querySelector('#stop').addEventListener('click',stopprinting)   
+</script>
+</html>
